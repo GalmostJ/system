@@ -2,7 +2,7 @@
 ###
  # @Author: your name
  # @Date: 2021-02-16 11:43:42
- # @LastEditTime: 2021-02-25 23:56:00
+ # @LastEditTime: 2021-02-26 00:14:51
  # @LastEditors: Please set LastEditors
  # @Description: In User Settings Edit
  # @FilePath: \k8s\shell\centos.sh
@@ -115,7 +115,6 @@ system_update_kernel (){
     # 下载指定版本用rpm -Uvh安装或者用yum安装：
     # yum -y install kernel-ml-devel-4.12.4-1.el7.elrepo.x86_64.rpm
     # yum -y install kernel-ml-4.12.4-1.el7.elrepo.x86_64.rpm
-    ########
     grub2-set-default 0
     grub2-mkconfig -o /boot/grub2/grub.cfg
 }
